@@ -1,12 +1,12 @@
 
-console.log('3-Simple-Big-O-Notation-For-Dummies');
+console.log('3-Simple-Big-O-Notation-ELI5');
 
 const arr1 = [1, 2, 3, 4, 5];
 const arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // O(1) : Constant Time
-const arr1Index = arr1[3];
-const arr2Index = arr2[7];
+const arr1Value = arr1[3];
+const arr2Value = arr2[7];
 
 // O(N) : Linear Time
 let totalArr1 = 0;
@@ -26,3 +26,5 @@ for (let i = 0; i < arr1.length; i++) {
         let someSum = outerItem + innerItem;
     }
 }
+
+// O(log N)
