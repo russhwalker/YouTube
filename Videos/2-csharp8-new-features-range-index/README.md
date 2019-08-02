@@ -1,4 +1,4 @@
-# 2-csharp8-new-features
+# 2-csharp8-new-features-range-index
 
 ## New Operators
 ### The **^** Operator
