@@ -10,46 +10,19 @@ namespace ASPNETMVCPostList.Controllers
     {
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult KidNames()
-        {
-            var viewModel = new Models.KidNamesViewModel
-            {
-                KidNames = new List<string>
-                {
-                    "Pete",
-                    "Jane"
-                }
-            };
-            return View(viewModel);
-        }
-
-        [HttpPost]
-        public ActionResult KidNames(Models.KidNamesViewModel viewModel) 
-        {
-            //TODO save logic here
-            return View(viewModel);
-        }
-
-        public ActionResult Kids()
-        {
             var viewModel = new Models.KidsViewModel
             {
                 Kids = new List<Models.Kid>
                 {
                     new Models.Kid
                     {
-                        Id = 1,
-                        Name = "Pete Doe",
-                        Age = 7
+                        Name = "John",
+                        Age = 3
                     },
                     new Models.Kid
                     {
-                        Id = 2,
-                        Name = "Jane Johnson",
-                        Age = 3
+                        Name = "Sally",
+                        Age = 7
                     }
                 }
             };
@@ -57,9 +30,8 @@ namespace ASPNETMVCPostList.Controllers
         }
 
         [HttpPost]
-        public ActionResult Kids(Models.KidsViewModel viewModel)
+        public ActionResult Index(Models.KidsViewModel viewModel)
         {
-            //TODO save logic here
             return View(viewModel);
         }
     }
